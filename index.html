@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja de Venda de Perfume</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Perfume</div>
+</nav>
+
+<section class="hero">
+  <h1>Descubra a Sua Fragrância Ideal</h1>
+   
+  <p>Elegância, sofisticação e qualidade.</p>
+</section>
+
+<section class="produtos" id="listaProdutos"></section>
+
+<section class="checkout">
+  <h2>Finalizar Compra</h2>
+  
+<div class="resumo-carrinho">
+  <p>Quantidade: <span id="quantidade">0</span></p>
+  <p>Total: <span id="total">0</span> MT</p>
+</div>
+
+  <select id="metodoPagamento">
+    <option value="e-Mola">e-Mola</option>
+	<option value="m-Kesh">m-Kesh</option>
+    <option value="M-Pesa">M-Pesa</option>
+	<option value="PayPal">PayPal</option>
+    <option value="Cartão Visa">Cartão Visa</option>
+  </select>
+
+  <button id="btnPagar">Confirmar Pagamento</button>
+  <p id="mensagemPagamento"></p>
+</section>
+
+<section class="contacto">
+  <h2>Comentário</h2>
+  <form id="formFeedback">
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Mensagem..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="mensagemFeedback"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
